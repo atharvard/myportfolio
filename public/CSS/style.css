@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;1,500&display=swap');
+
+:root{
+    --dark1: #21201E;
+    --brand: #FEA609;
+    --white: #FFFFFF;
+    --body: #FFFCDD;
+
+}
+
+
+/* boody design */
+body{
+    color: var(--body);
+    font-family: 'rubik' , sans-serif;
+    background-color: var(--dark1);
+    
+}
+
+/* headings */
+h1,h2,h3,h4,h5,h6{
+    font-weight: 6005;
+    color: var(--white);
+ 
+}
+
+/* NAvbar */
+.navbar{
+  background-color: var(--dark1);
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #FEA609;
+}
+
+a {
+    transition: all 0.4s ease;
+    color : var(--white);
+    text-decoration: none;
+    font-weight: 500;
+  
+}
+
+/* navbar hovering */
+a:hover{
+    color: var(--brand);
+
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.navbar .nav-link{
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+
+/* Home */
+#home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#home h1{
+    font-weight: 700;
+    color: var(--body);
+}
+
+#home .person-is span{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: var(--body);
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+
+
+#home .intro{
+    font-weight: 500;
+    color: var(--brand);
+    margin-bottom: 50px;
+}
+
+
+#home .person-img img{   
+    width:291px;
+    height: 295px;
+    object-fit: initial;
+    object-position: 50%;
+    
+    border-width: 10px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #FEA609;
+    
+
+}
+
+
+
+
+.person-img {
+    position: relative;
+    z-index: 2;
+    margin-left: 80px;
+    margin-bottom: 100px;
+}
+.ellipse-top{
+    width: 230px;
+    height: 217px;
+    background: rgba(49, 49, 49, 0.62);
+    position: absolute;
+    top: -25%;
+    right: 20%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.ellipse-bottom{
+    width: 194px;
+    height: 172px;
+    background: rgba(49, 49, 49, 0.62);
+    position: absolute;
+    bottom: -20%;
+    left: -2%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+/* button */
+
+.btn{
+    padding: 10px, 13px, 10px, 13px;
+}
+
+.btn-brand{
+    background-color: #FEA609;
+    border-color: #FEA609;
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--brand)
+}
+
+/* home page  */
+
+.brands {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto; 
+    grid-gap: 3rem;
+  }
+  
+  .brands__item {
+    background-color: transparent;
+    position: relative;
+   
+  }
+  
+  .brands__item img {
+    display: block;
+    max-width: 100%;
+    height: 70px;
+    width: 50px;
+  }
+  .brands__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #about .brands ul li {
+    list-style-type: none;
+  }
+
+
+  #about .brands__item .title3{
+    position: absolute;
+    margin-left: 100 px;
+    margin-top: 90px;
+    
+    color: #FFFFFF;
+    opacity: 0%;
+  }
+
+  #about .brands__item:hover .title3{
+    opacity: 1;
+  }
+
+
+
+  /* Experience */
+
+#experience .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    margin-left: 90px ;
+    margin-right: 90px;
+  }
+  
+  #experience .head1{
+     text-align: center;
+     color: #FEA609;
+     font-weight: bold;
+     font-size: 30px;
+  }
+
+  #experience .course{
+    color: #FEA609;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  #experience .institute {
+    color: #FFFFFF;
+    
+    display: grid;
+    background-color: rgb(55, 49, 44);
+    margin-right: 80px ;
+    border-radius: 15px;
+    padding: 15px;
+
+    
+    
+  }
+  
+  #experience .block1{
+    margin-bottom: 50px;
+    margin-left: 10%;
+  }
+
+  #experience .block2{
+    margin-left:0%;
+  }
+
+
+  #experience .headline{
+    margin-top: 50px;
+  }
+
+
+  /* vertical line */
+
+  #experience .vl{
+    border-left: 3px solid #FEA609;
+    height: 700px;
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 10px;
+  }
+
+
+ /* -----Project page------ */
+#project .title2{
+  text-align: left;
+  color: #FEA609;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 90px;
+
+}
+
+#project .thumbnail{
+  width:232px;
+  height: 187px;
+  object-fit: initial;
+  object-position: 50%;
+  border-style: ridge;
+  border-color: var(--white);
+  border-radius: 30px;
+  
+}
+#project .probox{
+  display: grid;
+  grid-template-columns: auto auto ; 
+  grid-column-start: auto;
+  grid-gap: 10rem;
+  margin-left: 90px;
+  margin-bottom: 20px;
+
+  
+}
+#project .discrip{
+  color: var(--white);
+}
+
+#project .text1{
+  background-color: rgba(48, 48, 48, 1);
+  border-radius: 30px;
+  text-align: left;
+  margin-right: 190px;
+  size: 250px;
+  padding: 20px;
+}
+
+#project .box1{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#project .projectlink{
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
+
+/* ---------Contact Page design----------- */
+
+#contact .contactgrid{
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-gap: 1rem;
+  margin-left: 90px;
+  margin-right: 90px;
+  padding: 30px;
+}
+ 
+#contact .deg{
+  color: #FEA609;
+}
+
+#contact .accounts1 img{
+  width: 40px;
+  margin-top:  20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+#contact .head2{
+  color: #FEA609;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+#contact .block2{
+  padding: 30px;
+  margin: 50px 30px 0px 30px;
+  background-color: #000000;
+  border-radius: 30px;
+}
+
+#contact .para1{
+  font-style: italic;
+}
+
+
+
+#contact .contactgrid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 80px 20px 80px;
+  position: absolute;
+}
+
+
+footer{
+  width: 100;
+  background-color: var(--dark1);
+  margin-top: auto;
+}
+footer p{
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 2rem;
+  font-size: 1rem;
+
+}

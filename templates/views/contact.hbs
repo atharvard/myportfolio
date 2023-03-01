@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>headerlinks}}
+</head>
+<body>
+    {{!-- navbar - template engine --}}
+    {{>navbar}}
+
+    {{!-- Contact Page  --}}
+    <section id="contact">
+      <div class="contactgrid">
+        <!-- accounts icons -->
+        <div class="">
+          <ul style="list-style-type: none;" class="accounts1">
+            <li>
+              <a href="https://www.linkedin.com/in/atharva-deshpande-2ba036199/" target="_blank">
+                <img src="/img/accounts/linkedin.png" alt="LinkedIn">
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/atharvard" target="_blank">
+                <img src="/img/accounts/github.png" alt="Github">
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@atharvard06" target="_blank">
+                <img src="/img/accounts/medium.png" alt="Medium">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/atharva_06_/" target="_blank">
+                <img src="/img/accounts/Insta.png" alt="Instagram">
+              </a>
+            </li>
+            <li>
+              <a href="mailto:atharvard06@gmail.com" target="_blank">
+                <img src="/img/accounts/email.png" alt="Email">
+              </a>
+            </li>
+            <li>
+              <a href="tel:+917020343403" target="_blank">
+                <img src="/img/accounts/phone.png" alt="MobileNo.">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {{!-- Address block --}}
+        <div>
+          <!-- tag -->
+          <div>
+            <div class="head2"><p>Contact <span style="color: white;">Me!</span></p></div>
+          </div>
+          <div class="contactgrid2">
+                      <!-- contact -->
+                        <div class="block2">
+                          <form method="post" action="/contactme">
+                            <div class="form-group1">
+                              <label for="fname">FullName*</label>
+                              <input class="required form-control" type="text" id="fname" name="fullname" placeholder="Enter Your  FullName..." type="text" required>
+                            </div>
+                            <div class="form-group2">
+                              <label for="lname">Email* </label>
+                              <input class="required form-control" type="email" id="lname" name="email" placeholder="Enter your Email..." required>
+                            </div>
+                            <div class="form-group3" >
+                              <label for="mobile">Mobile No.* </label>
+                              <input class="required form-control" type="number" id="mobile" name="mobileno" placeholder="Enter Your Mobile No...." type="number" required>
+                            </div>
+                            <div class="form-group4" >
+                              <label for="msg">Message* </label>
+                              <input class="required form-control"
+                              type="text" id="msg" name="message" placeholder="Enter Your Message..." type="text" required>
+                            </div>
+                            <div><input type="submit" value="Submit"></div>
+                          
+                          </form>                        
+                        </div>
+            
+                        <!-- contact details -->
+                        <div class="block3">
+                          <div class="block2">
+                            <div>
+                              <p class="para1"><span style="color: #FEA609;"> Address : </span> Plot No.9, Gut No. 161, Rukhmini Nagar, Satara Parisar, Aurangabad, Maharashtra, 431001.  </p>
+                              <p class="para1"><span style="color: #FEA609;"> Mobile No. : </span> +917020343403</p>
+                              <p class="para1"><span style="color: #FEA609;"> Email : </span>atharvard06@gmail.com</p>
+            
+                            </div>
+                            <div>
+                              <a class="btn btn-brand" href="https://goo.gl/maps/NwS3aEFjKt24yzoW8" target="_blank">Google Map</a>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+  
+        </div>
+
+
+
+      </div>
+    </section>
+
+    {{>footer}}
+  
+</body>
+</html>

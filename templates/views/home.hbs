@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>headerlinks}}
+</head>
+<body>
+    {{!-- navbar - template engine --}}
+    {{>navbar}}
+
+    {{!-- Home Page  --}}
+    <section id="home">
+      <div class ="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-first order-last">
+            <h1>I'm Atharva Deshpande</h1>
+            <div class="person-is mb-4">
+              <span>Electrical Engineer</span>
+              <span>/</span>
+              <span>Cloud Enthusiatic</span>
+              <span>/</span>
+              <span>Automation</span>
+            </div>
+            <div class="intro">
+              <p>I specialize in Cloud Computing, Automation & DevOps.
+                Loving the process as much as the outcome, I take
+               a collaborative, creative & strategic approach to
+               solving problems.
+               </p>
+            </div>
+            <div>
+              <a class="btn btn-brand" href="/project" >Explore my work</a>
+            </div>            
+          </div>
+          <div class="col-lg-4">
+            <div class="person-img">
+              <div class="ellipse-top"></div>
+              <div class="ellipse-bottom"></div>
+              <div class="imgedit">
+                <img src="img/Profile.jpg" alt="Atharva">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{>footer}}
+    
+</body>
+</html>
